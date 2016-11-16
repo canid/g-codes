@@ -1,0 +1,17 @@
+#!/usr/bin/python
+
+import math
+import sys
+
+def main(argv):
+   def endpoint(x, y, angle, length):
+
+      endx = x + (length * math.cos(math.radians(angle)))
+      endy = y + (length * math.sin(math.radians(angle)))
+
+      print("X: "+str(endx)+", Y: "+str(endy))
+
+   endpoint(float(argv[1]), float(argv[2]), float(argv[3]), float(argv[4]))
+
+if __name__ == "__main__":
+   main(sys.argv)
