@@ -1,0 +1,17 @@
+G90
+G0 Z-2
+G0 X3 Y1
+
+
+G91
+o100 repeat [8]
+G0 Z-1.02
+G1 X1.73205 Y1 F4
+G0 Z1
+G0 X-1.73205 Y-1
+o100 endrepeat
+
+G90
+G0 Z-2
+
+M2
